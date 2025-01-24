@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className='  text-white overflow-hidden font-small'>
       <nav className='  flex'>
 
-        <div className='   px-10  md:w-[50%] md:clip-right  py-6'>
+        <div className='   px-10  md:w-[86.5%] md:clip-right  py-6'>
           <div className='font-bold md:text-2xl  md:px-8'>SD SHARMA</div>
         </div>
 
