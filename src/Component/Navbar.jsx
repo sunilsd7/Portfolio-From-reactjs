@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
 
-        <div className='md:ms-auto md:bg-white  lg:w-[89.65%] md:w-[50%] clip-nav md:text-black font-medium text-2xl'>
+        <div className='md:ms-auto md:bg-black  lg:w-[89.65%] md:w-[50%] clip-nav  font-medium text-2xl'>
           <ul className='flex gap-x-10 justify-end mt-4 px-10 '>
             <li> <a href="#aboutme" className='hover:text-blue'>About</a> </li>
             <li><a href="#skills" className='hover:text-blue'>Skills</a></li>
