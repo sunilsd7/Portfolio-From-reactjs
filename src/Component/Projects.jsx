@@ -8,8 +8,8 @@ const Projects = () => {
   return (
     <section>
     <div id='projects'>
-      <div className='text-center mx-auto font-bold text-4xl border-4 rounded-lg md:w-[10%] w-[40%] p-2 '>
-        Projects
+      <div className='text-center mx-auto font-bold text-4xl   p-2 '><span className=' border-4 rounded-lg p-2 px-5'>
+        Projects </span>
       </div>
      
       <div className="md:grid md:grid-cols-2 px-20 gap-16 mt-5">

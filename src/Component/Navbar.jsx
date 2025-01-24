@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className='  flex'>
 
         <div className='   px-10  md:w-[50%] md:clip-right  py-6'>
-          <div className='font-bold md:text-3xl  md:px-8'>SD SHARMA</div>
+          <div className='font-bold md:text-2xl  md:px-8'>SD SHARMA</div>
         </div>
 
 
@@ -19,7 +19,7 @@ const Navbar = () => {
             <li><a href="#projects" className='hover:text-blue'>Projects</a></li>
 
             <li><a href="#contactme" className='hover:text-blue' >Contact</a></li>
-            <li><a className='border-2 rounded-lg p-2 hover:text-blue flex' download="Sunil_CV.pdf" href='Sunil-Dumre-cv.pdf'>Download CV <IoMdDownload className='m-2 ' /></a></li>
+            <li><a className='border-2 rounded-lg p-1 text-xl font-medium hover:text-blue flex' download="Sunil_CV.pdf" href='Sunil-Dumre-cv.pdf'>Download CV <IoMdDownload className='m-2 ' /></a></li>
           </ul>
         </div>
 
