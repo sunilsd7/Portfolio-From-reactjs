@@ -19,7 +19,7 @@ const Projects = () => {
             <p className='font-bold text-2xl mt-3'>Furniture website:demo project from react</p>
             <div className='space-x-6 mt-3 flex '>
             <button className='border-4 rounded-lg md:text-2xl px-2 hover:text-blue '><a href="https://github.com/sunilsd7/Furniture-website.git" target='_blank'>Github Repo</a></button>
-            <button className='border-4  border-white rounded-lg md:text-2xl px-2 bg-blue flex '><a href="https://furniturewebsitee.netlify.app/" target='_blank'> View Live <span><FaEye/> </span></a></button></div>
+            <button className='border-4  border-white rounded-lg md:text-2xl  bg-blue flex  items-center gap-2 p-2'><a href="https://furniturewebsitee.netlify.app/" target='_blank'> View Live </a><span className=''><FaEye/> </span></button></div>
             
         </div>
         
