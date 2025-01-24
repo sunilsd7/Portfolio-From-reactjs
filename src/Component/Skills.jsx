@@ -8,8 +8,8 @@ import ReactImage from '../assets/react.png';
 
 const Skills = () => {
   return (
-    <div id="skills" className="py-10">
-      <h2 className="text-center font-bold text-4xl mb-8">Skills</h2>
+    <div id="skills" className="py-10 ">
+      <h2 className="text-center font-bold md:text-4xl text-3xl mb-8 border-4 md:w-[10%] mx-auto rounded-lg w-[30%] p-2">Skills</h2>
       {/* First row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center px-10 lg:px-20">
         <div>

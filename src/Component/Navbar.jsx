@@ -4,7 +4,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <div className='  text-white'>
+    <div className='  text-white overflow-hidden'>
       <nav className=' text-2xl flex'>
         
         <div className='   px-10  md:w-1/2 md:clip-right  py-6'>
