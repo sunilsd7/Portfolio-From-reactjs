@@ -7,13 +7,13 @@ const Navbar = () => {
     <div className='  text-white overflow-hidden font-small'>
       <nav className='  flex'>
         
-        <div className='   px-10  md:w-[60] md:clip-right  py-6'>
+        <div className='   px-10  md:w-[50%] md:clip-right  py-6'>
         <div  className='font-bold md:text-3xl  md:px-8'>SD SHARMA</div>
         </div>
        
        
-        <div className='md:ms-auto md:bg-white md:w-1/2 clip-nav md:text-black font-medium text-2xl'>
-            <ul className='flex space-x-10 justify-end mt-4 px-10 '>
+        <div className='md:ms-auto md:bg-white md:w-[70%] clip-nav md:text-black font-medium text-2xl'>
+            <ul className='flex gap-x-10 justify-end mt-4 px-10 '>
                 <li> <a href="#aboutme" className='hover:text-blue'>About Me</a> </li>
                 <li><a href="#skills" className='hover:text-blue'>Skills</a></li>
                 <li><a href="#projects" className='hover:text-blue'>Projects</a></li>
