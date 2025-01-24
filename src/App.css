@@ -1,0 +1,16 @@
+
+@media screen and (min-width:768px ){
+  .clip-left {
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0 100%);
+  }
+
+  .clip-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .clip-nav {
+    clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0 100%);
+  }
+  
+  
+}
