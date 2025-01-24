@@ -1,6 +1,7 @@
 import React from 'react'
 import Furniture from '../assets/furniture.png'
 import Medimitra from '../assets/medi-mitra.png'
+import { FaEye } from "react-icons/fa";
 
 
 
@@ -18,7 +19,7 @@ const Projects = () => {
             <p className='font-bold text-2xl mt-3'>Furniture website:demo project from react</p>
             <div className='space-x-6 mt-3 flex '>
             <button className='border-4 rounded-lg md:text-2xl px-2 hover:text-blue '><a href="https://github.com/sunilsd7/Furniture-website.git" target='_blank'>Github Repo</a></button>
-            <button className='border-4  border-blue rounded-lg md:text-2xl px-2 bg-blue '><a href="https://furniturewebsitee.netlify.app/" target='_blank'> View Live</a></button></div>
+            <button className='border-4  border-white rounded-lg md:text-2xl px-2 bg-blue flex '><a href="https://furniturewebsitee.netlify.app/" target='_blank'> View Live <span><FaEye/> </span></a></button></div>
             
         </div>
         
