@@ -18,9 +18,10 @@ const HeroSection = () => {
             Front-end Developer
           </p></div>
           <div className="flex space-x-6 text-3xl">
-            <FaGithub />
-            <FaFacebook  />
-            <CiLinkedin />
+            <a  href='https://github.com/sunilsd7' target='_blank'> <FaGithub/></a>
+
+            <a  href='https://www.facebook.com/sunildumre11' target='_blank'> <FaFacebook  /></a>
+            <a  href='https://github.com/sunilsd7' target='_blank'> <CiLinkedin /></a>
           </div>
         </div>
       </div>
