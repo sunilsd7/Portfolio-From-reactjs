@@ -17,16 +17,12 @@ const AboutMe = () => {
 </p>
 <img src={WebImage} alt=""  className='item-center'/>
 </div>
-<div>
-  <img src="" alt="img" />
-</div>
+
       </div>
      
       
   
-      <div>
-        
-      </div>
+    
     </div>
   )
 }
