@@ -19,7 +19,7 @@ const Navbar = () => {
             <li><a href="#projects" className='hover:text-blue'>Projects</a></li>
 
             <li><a href="#contactme" className='hover:text-blue' >Contact</a></li>
-            <li><a className='border-2 rounded-lg p-1 text-xl font-medium hover:text-blue flex' download="Sunil_CV.pdf" href='Sunil-Dumre-cv.pdf'>Download CV <IoMdDownload className='m-2 ' /></a></li>
+            <li className='border-2 rounded-lg'><a className='p-1 text-xl font-medium hover:text-blue flex' download="Sunil_CV.pdf" href='Sunil-Dumre-cv.pdf'>Download CV <IoMdDownload className='m-2 ' /></a></li>
           </ul>
         </div>
 
