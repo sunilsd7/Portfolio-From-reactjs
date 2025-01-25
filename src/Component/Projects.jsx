@@ -13,7 +13,7 @@ const Projects = () => {
         Projects </span>
       </div>
      
-      <div className="md:grid md:grid-cols-2  gap-16 mt-5">
+      <div className="md:grid md:grid-cols-2 px-5 gap-16 mt-5">
         <div className='border-2 p-5 my-4 rounded-[1rem] '>
             <img src={Furniture} alt="" />
             <p className='font-bold text-2xl mt-3'>Furniture website:demo project from react</p>
