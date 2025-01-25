@@ -7,7 +7,7 @@ import { FaEye } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section>
+    <section className='px-5'>
     <div id='projects'>
       <div className='text-center mx-auto font-bold text-4xl   p-2 '><span className=' border-4 rounded-lg p-2 px-5'>
         Projects </span>
