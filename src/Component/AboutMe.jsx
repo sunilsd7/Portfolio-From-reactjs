@@ -4,7 +4,7 @@ import WebImage from '../assets/webdevelopment.png'
 
 const AboutMe = () => {
   return (
-    <div className='px-10 mt-10 md:mt-0' id='aboutme'>
+    <div className='px-5 mt-10 md:mt-0' id='aboutme'>
   
       <div className='text-center font-bold md:text-4xl text-2xl mb-10 mt-10 flex justify-center '> <span className='flex border-4 px-6  py-4 space-x-4 rounded-lg'><span className=' tracking-widest  '>
         About Me</span> < FaUser className='' /></span></div>

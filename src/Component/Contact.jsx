@@ -8,7 +8,7 @@ import { CgMail } from "react-icons/cg";
 const Contact = () => {
   return (
     <div className='px-5'>
-      <div className='text-center mt-10'>
+      <div className='text-center my-10'>
         <span className='border-2 p-2 rounded-lg text-4xl'>Contact Me</span>
       </div>
 
