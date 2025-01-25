@@ -1,4 +1,9 @@
 import React from 'react'
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { CiInstagram } from "react-icons/ci";
+import { CgMail } from "react-icons/cg";
 
 const Contact = () => {
   return (
@@ -10,6 +15,14 @@ const Contact = () => {
     <div className='md:flex gap-32'>
       <div className='text-center md:ms-auto text-4xl'>
         <div>Connect with me</div>
+        <div className="flex space-x-6 text-3xl mt-5 justify-center">
+                    <a  href='https://github.com/sunilsd7' target='_blank'> <FaGithub/></a>
+        
+                    <a  href='https://www.facebook.com/sunildumre11' target='_blank'> <FaFacebook  /></a>
+                    <a  href='https://github.com/sunilsd7' target='_blank'> <CiLinkedin /></a>
+                    <a href="https://www.instagram.com/s.dsharma19/profilecard/?igsh=MWUyNzQ0MXRsNWQ4cA== "><CiInstagram/></a>
+                    <a href="mailto:sumildumre555@gmail.com"> <CgMail/></a>
+                  </div>
       </div>
       <div className='md:mx-auto'>
        <form className='pt-5  p-10' >

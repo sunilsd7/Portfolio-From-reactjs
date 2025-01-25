@@ -1,31 +1,111 @@
-import React from 'react'
+import React, { useState } from "react";
 import { IoMdDownload } from "react-icons/io";
-
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
-  return (
-    <div className='  text-white overflow-hidden font-small'>
-      <nav className='  flex'> 
+  const [menuOpen, setMenuOpen] = useState(false);
 
-        <div className='   px-10   py-6'>
-          <div className='font-bold md:text-2xl  md:px-8'>SD SHARMA</div>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div className="text-white font-small bg-black">
+      <nav className="flex items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <div className="font-bold text-2xl">SD SHARMA</div>
+
+        {/* Menu Icon for Small Devices */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-2xl focus:outline-none"
+          >
+            {menuOpen ? <FiX /> : <FiMenu />}
+          </button>
         </div>
 
-
-        <div className='md:ms-auto font-medium text-2xl'>
-          <ul className='flex gap-x-10 justify-end mt-4 px-10 '>
-            <li> <a href="#aboutme" className='hover:text-blue'>About</a> </li>
-            <li><a href="#skills" className='hover:text-blue'>Skills</a></li>
-            <li><a href="#projects" className='hover:text-blue'>Projects</a></li>
-
-            <li><a href="#contactme" className='hover:text-blue' >Contact</a></li>
-            <li className='border-2 rounded-lg'><a className='p-1 text-xl font-medium hover:text-blue flex' download="Sunil_CV.pdf" href='Sunil-Dumre-cv.pdf'>Download CV <IoMdDownload className='m-2 ' /></a></li>
+        {/* Menu Items for Medium and Large Screens */}
+        <div className="hidden md:flex md:items-center md:space-x-10">
+          <ul className="flex gap-x-10 text-lg">
+            <li>
+              <a href="#aboutme" className="hover:text-blue">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="hover:text-blue">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-blue">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contactme" className="hover:text-blue">
+                Contact
+              </a>
+            </li>
+            <li className="border-2 rounded-lg">
+              <a
+                className="flex items-center p-2 hover:text-blue"
+                download="Sunil_CV.pdf"
+                href="Sunil-Dumre-cv.pdf"
+              >
+                Download CV <IoMdDownload className="ml-2" />
+              </a>
+            </li>
           </ul>
         </div>
 
+        {/* Small Screen Menu */}
+        {menuOpen && (
+          <div className="fixed top-0 right-0 w-64 h-full bg-black text-white p-6 z-50 shadow-lg">
+            <button
+              onClick={toggleMenu}
+              className="text-2xl mb-4 focus:outline-none"
+            >
+              <FiX />
+            </button>
+            <ul className="flex flex-col gap-y-6 text-lg">
+              <li>
+                <a href="#aboutme" className="hover:text-blue" onClick={toggleMenu}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="hover:text-blue" onClick={toggleMenu}>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="hover:text-blue" onClick={toggleMenu}>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contactme" className="hover:text-blue" onClick={toggleMenu}>
+                  Contact
+                </a>
+              </li>
+              <li className="border-2 rounded-lg">
+                <a
+                  className="flex items-center p-2 hover:text-blue"
+                  download="Sunil_CV.pdf"
+                  href="Sunil-Dumre-cv.pdf"
+                  onClick={toggleMenu}
+                >
+                  Download CV <IoMdDownload className="ml-2" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

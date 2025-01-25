@@ -10,7 +10,8 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Navbar  />
+        <div className=''>
+        <Navbar  /></div>
         <Hero />
         <AboutMe />
         <Skills />
