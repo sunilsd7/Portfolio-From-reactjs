@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className="relative   md:flex px-5  ">
     
-      <div className=" md:w-2/5  flex items-center  overflow-hidden">
+      <div className="md:w-1/2 lg:w-2/5  flex items-center  overflow-hidden">
         <div className=" font-bold text-xl  md:text-4xl md:ms-auto ">
         <div className=''>
         <span className=" md:tracking-widest "> Hi I'm,</span>
