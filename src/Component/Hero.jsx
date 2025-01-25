@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="relative md:h-screen  md:flex px-5 md:px-0 ">
+    <div className="relative   md:flex px-5 md:px-0 ">
     
       <div className=" md:w-2/5  flex items-center  overflow-hidden">
         <div className=" font-bold text-xl  md:text-4xl md:ms-auto ">
