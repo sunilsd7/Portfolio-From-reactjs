@@ -79,9 +79,9 @@ const Navbar = () => {
         {menuOpen && (
           <div
             ref={menuRef}
-            className="fixed top-0 right-0 w-64 h-full bg-black text-white p-6 z-50 shadow-lg"
+            className="absolute top-14 right-6 bg-black bg-opacity-75 text-white rounded-lg shadow-lg p-4 z-50"
           >
-            <ul className="flex flex-col gap-y-6 text-lg">
+            <ul className="flex flex-col gap-y-4 text-lg">
               <li>
                 <a
                   href="#aboutme"
