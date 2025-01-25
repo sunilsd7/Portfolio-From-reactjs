@@ -5,9 +5,9 @@ export default {
     extend: {},
     colors: {
       lightBlue: "#C4C4C4",
-      black: " #000000",
+      black: " #16161a",
       white: "#ffffff",
-      blue: "#0000ff",
+      blue: "#7f5af0",
     },
   },
   plugins: [],
