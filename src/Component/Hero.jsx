@@ -21,7 +21,7 @@ const HeroSection = () => {
             <a  href='https://github.com/sunilsd7' target='_blank'> <FaGithub/></a>
 
             <a  href='https://www.facebook.com/sunildumre11' target='_blank'> <FaFacebook  /></a>
-            <a  href='www.linkedin.com/in/sunil-dumre' target='_blank'> <CiLinkedin /></a>
+            <a  href='`https://www.linkedin.com/in/sunil-dumre' target='_blank'> <CiLinkedin /></a>
           </div>
         </div>
       </div>

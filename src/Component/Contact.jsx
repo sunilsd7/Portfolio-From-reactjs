@@ -19,7 +19,7 @@ const Contact = () => {
                     <a  href='https://github.com/sunilsd7' target='_blank'> <FaGithub/></a>
         
                     <a  href='https://www.facebook.com/sunildumre11' target='_blank'> <FaFacebook  /></a>
-                    <a  href='www.linkedin.com/in/sunil-dumre' target='_blank'> <CiLinkedin /></a>
+                    <a  href='https://www.linkedin.com/in/sunil-dumre' target='_blank'> <CiLinkedin /></a>
                     <a href="https://www.instagram.com/s.dsharma19/profilecard/?igsh=MWUyNzQ0MXRsNWQ4cA== "><CiInstagram/></a>
                     <a href="mailto:sumildumre555@gmail.com"> <CgMail/></a>
                   </div>
