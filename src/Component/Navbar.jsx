@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IoMdDownload } from "react-icons/io";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Reference for the menu container
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Close menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="text-white font-small bg-black">
@@ -62,31 +77,44 @@ const Navbar = () => {
 
         {/* Small Screen Menu */}
         {menuOpen && (
-          <div className="fixed top-0 right-0 w-64 h-full bg-black text-white p-6 z-50 shadow-lg">
-            <button
-              onClick={toggleMenu}
-              className="text-2xl mb-4 focus:outline-none"
-            >
-              <FiX />
-            </button>
+          <div
+            ref={menuRef}
+            className="fixed top-0 right-0 w-64 h-full bg-black text-white p-6 z-50 shadow-lg"
+          >
             <ul className="flex flex-col gap-y-6 text-lg">
               <li>
-                <a href="#aboutme" className="hover:text-blue" onClick={toggleMenu}>
+                <a
+                  href="#aboutme"
+                  className="hover:text-blue"
+                  onClick={toggleMenu}
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-blue" onClick={toggleMenu}>
+                <a
+                  href="#skills"
+                  className="hover:text-blue"
+                  onClick={toggleMenu}
+                >
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-blue" onClick={toggleMenu}>
+                <a
+                  href="#projects"
+                  className="hover:text-blue"
+                  onClick={toggleMenu}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contactme" className="hover:text-blue" onClick={toggleMenu}>
+                <a
+                  href="#contactme"
+                  className="hover:text-blue"
+                  onClick={toggleMenu}
+                >
                   Contact
                 </a>
               </li>
