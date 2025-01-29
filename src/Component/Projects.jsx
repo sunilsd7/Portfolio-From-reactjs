@@ -24,6 +24,7 @@ const projects = [
   {
     id:3,
     title : "Animated Task Assigned for interview",
+    description: "Task assigned for interview by vrit technology",
     image : Animated,
     repoLink: "https://github.com/sunilsd7/Animationtask.git",
     liveLink: "https://animatedtask.netlify.app/"
