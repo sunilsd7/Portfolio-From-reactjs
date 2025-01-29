@@ -1,6 +1,7 @@
 import React from 'react';
 import Furniture from '../assets/furniture.png';
 import Medimitra from '../assets/medi-mitra.png';
+import Animated from '../assets/Animated.png';
 import { FaEye } from 'react-icons/fa';
 
 const projects = [
@@ -20,6 +21,13 @@ const projects = [
     repoLink: 'https://github.com/sunilsd7/Medi-mitra.git',
     liveLink: null,
   },
+  {
+    id:3,
+    title : "Animated Task Assigned for interview",
+    image : Animated,
+    repoLink: "https://github.com/sunilsd7/Animationtask.git",
+    liveLink: "https://animatedtask.netlify.app/"
+  }
 ];
 
 const Projects = () => {
