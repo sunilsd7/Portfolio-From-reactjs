@@ -3,6 +3,7 @@ import Furniture from '../assets/furniture.png';
 import Medimitra from '../assets/medi-mitra.png';
 import Animated from '../assets/Animated.png';
 import { FaEye } from 'react-icons/fa';
+import Inventory from '../assets/InventoryManagement.png'
 
 const projects = [
   {
@@ -28,7 +29,14 @@ const projects = [
     image : Animated,
     repoLink: "https://github.com/sunilsd7/Animationtask.git",
     liveLink: "https://animatedtask.netlify.app/"
-  }
+  },
+  {
+    id:4,
+    title :"Inventory Management System",
+    description:"Demo react project for practice",
+image: Inventory
+    repoLink: "https://github.com/sunilsd7/InventoryManagement_Frontend.git",
+    liveLink:null
 ];
 
 const Projects = () => {

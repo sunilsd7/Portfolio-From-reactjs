@@ -31,7 +31,7 @@ const HeroSection = () => {
         <img
           src={MyImage}
           alt="image"
-          className="md:w-1/2 md:h-auto px-10"
+          className="md:w-1/2 md:h-auto px-10 "
         />
       
       </div>
