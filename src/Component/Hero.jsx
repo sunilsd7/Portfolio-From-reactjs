@@ -39,9 +39,7 @@ const HeroSection = () => {
       </div>
 
 
-      <div className="md:relative w-full flex items-center justify-center overflow-hidden md:bg-white clip-left " data-aos="fade-right"
-                        data-aos-offset="500"
-                        data-aos-easing="ease-in-sine">
+      <div className="md:relative w-full flex items-center justify-center overflow-hidden md:bg-white clip-left " >
         <img
           src={MyImage}
           alt="image"
