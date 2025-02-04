@@ -14,7 +14,7 @@ const HeroSection = () => {
   useEffect(()=>{
     AOS.init({
       duration:1200,
-      easing: 'ease-in-out',
+      offset: 500,
       once: false,
     })
   })
