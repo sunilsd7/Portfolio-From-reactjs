@@ -48,11 +48,11 @@ const Projects = () => {
           <span className="border-4 rounded-lg px-5 py-2">Projects</span>
         </h2>
       </div>
-      <div className="md:grid md:grid-cols-2 gap-8 mt-8">
+      <div className="md:grid md:grid-cols-2 gap-20 mt-8 ">
         {projects.map(({ id, title, description, image, repoLink, liveLink }) => (
           <article
             key={id}
-            className="border-2 p-6 my-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+            className="border-2 p-6 my-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow  hover:scale-110"
           >
             <img src={image} alt={`${title} screenshot`} className="rounded-lg" />
             <h3 className="font-bold text-2xl mt-4">{title}</h3>

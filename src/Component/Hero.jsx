@@ -1,11 +1,23 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 
 import MyImage from '../assets/Myprofile.png';
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const HeroSection = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration:1200,
+      easing: 'ease-in-out',
+      once: false,
+    })
+  })
   return (
     <div className="relative   md:flex px-5  ">
     
@@ -27,7 +39,9 @@ const HeroSection = () => {
       </div>
 
 
-      <div className="md:relative w-full flex items-center justify-center overflow-hidden md:bg-white clip-left">
+      <div className="md:relative w-full flex items-center justify-center overflow-hidden md:bg-white clip-left " data-aos="fade-right"
+                        data-aos-offset="500"
+                        data-aos-easing="ease-in-sine">
         <img
           src={MyImage}
           alt="image"
