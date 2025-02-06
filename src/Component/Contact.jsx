@@ -3,7 +3,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaFacebook } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { CgMail } from "react-icons/cg";
-import toast,{Toster} from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -98,6 +98,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder='Your Name'
+                
               />
             </div>
             <div className='mb-4'>
@@ -109,17 +110,19 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder='Your Email'
+               
               />
             </div>
             <div className='mb-4'>
               <textarea
-                className='w-full py-2 px-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-primarycolor' // Fixed text color
+                className='w-full py-2 px-3 bg-gray-700 text-black rounded focus:outline-none focus:ring-2 focus:ring-primarycolor' 
                 name="message"
                 id="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder='Your Message'
                 rows="4"
+                
               ></textarea>
             </div>
             <button
