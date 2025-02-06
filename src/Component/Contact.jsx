@@ -91,7 +91,7 @@ const Contact = () => {
           <form onSubmit={handleFormSubmit}>
             <div className='mb-4'>
               <input
-                className='w-full py-2 px-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-primarycolor'
+                className='w-full py-2 px-3 bg-gray-700 text-black rounded focus:outline-none focus:ring-2 focus:ring-primarycolor'
                 type="text"
                 name="name"
                 id="name"
@@ -103,7 +103,7 @@ const Contact = () => {
             </div>
             <div className='mb-4'>
               <input
-                className='w-full py-2 px-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-primarycolor'
+                className='w-full py-2 px-3 bg-gray-700 text-black rounded focus:outline-none focus:ring-2 focus:ring-primarycolor'
                 type="email"
                 name="email"
                 id="email"
