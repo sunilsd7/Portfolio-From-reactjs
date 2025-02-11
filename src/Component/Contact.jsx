@@ -20,11 +20,11 @@ const Contact = () => {
   };
 
   const handleFormSubmit = (e) => {
-    e.preventDefault(); // Fixed Typo
+    e.preventDefault();
     
     if (!formData.name || !formData.email || !formData.message) { 
       toast.error('Please fill out all fields before submitting.');
-      return;
+      return; 
     }
 
     setIsSubmitting(true);

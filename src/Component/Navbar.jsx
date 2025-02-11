@@ -4,13 +4,11 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Reference for the menu container
-
+  const menuRef = useRef(null);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Close menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -27,10 +25,10 @@ const Navbar = () => {
   return (
     <div className="text-white font-small bg-black">
       <nav className="flex items-center justify-between px-6 py-4">
-        {/* Logo */}
+    
         <div className="font-bold text-2xl">SD SHARMA</div>
 
-        {/* Menu Icon for Small Devices */}
+       
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -40,7 +38,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menu Items for Medium and Large Screens */}
+     
         <div className="hidden md:flex md:items-center md:space-x-10">
           <ul className="flex gap-x-10 text-lg">
             <li>
@@ -75,11 +73,11 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Small Screen Menu */}
+      
         {menuOpen && (
           <div
             ref={menuRef}
-            className="absolute top-14 right-6 bg-black bg-opacity-75 text-white rounded-lg shadow-lg p-4 z-50"
+            className="absolute top-14 right-6 bg-opacity-75 text-white rounded-lg shadow-lg p-4 z-50"
           >
             <ul className="flex flex-col gap-y-4 text-lg">
               <li>
