@@ -2,6 +2,7 @@ import React from 'react';
 import Furniture from '../assets/furniture.png';
 import Medimitra from '../assets/medi-mitra.png';
 import Animated from '../assets/Animated.png';
+import Quizapp from '../assets/quizapp.png'
 import InventoryImage from "../assets/InventoryManagement.png"
 import { FaEye } from 'react-icons/fa';
 
@@ -37,6 +38,13 @@ const projects = [
     image : InventoryImage,
     repoLink: "https://github.com/sunilsd7/InventoryManagement_Frontend/tree/main",
     liveLink: null ,
+  },
+  {
+    id:5,
+    title: "Quiz App",
+    description:"Quiz app using react js and tailwind css",
+    image:Quizapp,
+    repoLink:"https://github.com/sunilsd7/Quiz-App.git",
   }
 ];
 
