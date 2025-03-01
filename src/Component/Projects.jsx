@@ -45,6 +45,7 @@ const projects = [
     description:"Quiz app using react js and tailwind css",
     image:Quizapp,
     repoLink:"https://github.com/sunilsd7/Quiz-App.git",
+    livelink:"https://reactquiz12.netlify.app/",
   }
 ];
 
