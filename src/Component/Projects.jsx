@@ -31,16 +31,9 @@ const projects = [
     repoLink: "https://github.com/sunilsd7/Animationtask.git",
     liveLink: "https://animatedtask.netlify.app/"
   },
+
   {
     id:4,
-    title : "Inventory Management System",
-    description: "Demo Project of react js for inventory management system",
-    image : InventoryImage,
-    repoLink: "https://github.com/sunilsd7/InventoryManagement_Frontend/tree/main",
-    liveLink: null ,
-  },
-  {
-    id:5,
     title: "Quiz App",
     description:"Quiz app using react js and tailwind css",
     image:Quizapp,
